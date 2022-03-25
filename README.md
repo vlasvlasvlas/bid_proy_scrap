@@ -11,12 +11,12 @@ Para esto se utiliza un proceso de scrapeo de datos html cuyo origen es el lista
 
 
 ## Proceso
-- Toma listado de id de proyectos de proyectos_lista.csv
+- Toma listado de id de proyectos de proyectos bid ("proyectos_lista.csv")
 - Itera por cada fila, recreando la url del proyecto. Por cada url:
 	- utiliza beautifulsoup para extración scrap de los tags de project-field-title y project-field-data del sitio
 	- almacena pares es diccionario
-- Pasa total de resultados a un pandas DataFrame y exporta resultado en xlsx/csv
+- Pasa total de resultados a un pandas DataFrame y exporta resultado en xlsx/csv ("proyectos_lista_output.xlsx")
 
 ## To-Do
-- Traer url xlsx de listado de proyectos, pensando en uno o varios países (latam?)
+- Traer url xlsx de listado de proyectos ("proyectos.xlsx"), pensando en uno o varios países (latam?)
 
